@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+  let str = prompt('nhap tu: ')
+  document.write(isPalindrome(str))
+  function isPalindrome(str) {
+    let tempt = true;
+    for (let i=0;i<str.length/2;i++){
+      if (str[i]==str[str.length-i-1]) {
+        tempt = true;
+      }else{
+        tempt = false;
+      }
+    }
+    if (tempt){
+      return true
+    }else {
+      return false
+    }
+  }
+</script>
