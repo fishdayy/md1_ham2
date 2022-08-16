@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Display All Product</h3>
+<div id="product name"></div>
+<button id="add" onclick="addProduct()">Add</button>
+<button id="edit" onclick="editProduct()">Edit</button>
+<button id="remove" onclick="removeProduct()">Remove</button>
+</body>
+</html>
+<script>
+    let product = ['Sony Xperia', 'Samsung Galaxy', 'Nokia 6', 'Xiaomi Redmi Note 4', 'Apple iPhone 6S', 'Xiaomi Mi 5s Plus', 'Apple iPhone 8 Plus', 'Fujitsu F-04E', 'Oppo A71'];
+    document.getElementById('product name').innerHTML = showProduct(product)
+    function showProduct(product){
+        let stt =''
+        for (let i = 0; i < product.length; i++){
+            stt = stt + (i+1)+". "+product[i] + "<br>"
+        }
+        return stt;
+    }
+    function addProduct(){
+        let newProduct = prompt('nhap ten mat hang: ');
+        product.push(newProduct);
+        document.getElementById('product name').innerHTML = showProduct(product)
+    }
+    function editProduct(){
+        let numberEdit = prompt('nhap so thu tu can sua: ');
+        let newProduct = prompt('nhap ten thay the: ');
+        product[numberEdit - 1] = newProduct;
+        document.getElementById('product name').innerHTML = showProduct(product)
+    }
+    function removeProduct(){
+        let numberRemove = prompt('nhap so thu tu can xoa: ');
+        product.splice(numberRemove - 1,1);
+        document.getElementById('product name').innerHTML = showProduct(product)
+    }
+</script>
