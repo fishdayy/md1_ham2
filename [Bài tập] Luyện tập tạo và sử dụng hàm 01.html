@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập tạo và sử dụng hàm 01</title>
+</head>
+<body>
+<!--bai 1-->
+<!--<p onclick="alertMessage()">xin chao</p>-->
+
+</body>
+</html>
+<script>
+    //bai 1
+    // function alertMessage(){
+    //     alert('xin chao')
+    // }
+
+    //bai 2
+    // let a = +prompt('nhap so: ');
+    // function tangGiaTri(a) {
+    //     a++
+    //     return a;
+    // }
+    // document.write('number sau khi goi ham : ' + tangGiaTri(a))
+
+    //bai 3
+    // function compare(a,b){
+    //     if (a > b){
+    //         alert('so a lon hon so b');
+    //     } else {
+    //        let sum = a + b;
+    //         document.write(sum)
+    //     }
+    // }
+    // let a = +prompt('nhap so a: ')
+    // let b = +prompt('nhap so b: ')
+    // compare(a,b)
+
+    //bai 4
+    // function addNumbers() {
+    //     let firstNum = 4;
+    //     let secondNum = 8;
+    //     let result = firstNum + secondNum;
+    //     alert(result)
+    //     return result;
+    // }
+    // result = 0;
+    // alert(result)
+    // result = addNumbers();
+
+    //bai 5
+    let arr1 = ['Polaris','Aldebaran','Deneb','Vega','Altair','Dubhe','Regulus'];
+    let arr2 = ['Ursa Minor','Taurus','Cygnus','Lyra','Aquila','Ursa Major','Leo'];
+    let sao = prompt('nhap ten ngoi sao: ');
+    check_star(sao)
+    function check_star(star){
+        let index = 0;
+        if (arr1.indexOf(star) >= 0){
+            index = arr1.indexOf(star)
+            alert(star + ' thuoc chom sao ' + arr2[index])
+        }else {
+            alert(star + ' khong thuoc chom sao nao')
+        }
+    }
+</script>
