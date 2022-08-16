@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //bai 1
+    // let so = +prompt(' nhap so bat ky: ');
+    // document.write(binhphuong(so))
+    // function binhphuong(a){
+    //     let binhphuong = a * a;
+    //     return binhphuong;
+    // }
+
+
+    //bai 2
+    // let r = +prompt('nhap ban kinh hinh tron');
+    // function chuvihinhtron(a){
+    //     let chuvi = a * 2 * 3.14;
+    //     return chuvi;
+    // }
+    // function dientichhinhtron(b){
+    //     let dientich = b * b * 3.14;
+    //     return dientich;
+    // }
+    // document.write('chu vi hinh tron la : '+ chuvihinhtron(r) + '<br>')
+    // document.write('dien tich hinh tron la: '+dientichhinhtron(r))
+
+    //bai 3
+    // let so = +prompt('nhap so nguyen tinh giai thua: ');
+    // function giaithua(a){
+    //     if (a === 0){
+    //         return 1;
+    //     }else {
+    //         return a * giaithua(a-1);
+    //     }
+    // }
+    // document.write('giai thua bang: '+giaithua(so));
+
+    //bai 4
+    // let kytu = prompt('nhap ky tu: ');
+    // kiemtra(kytu)
+    // function kiemtra(a){
+    //     if (a >= 0 && a <= 9){
+    //         alert('day la ky tu so');
+    //     }else {
+    //         alert('day khong phai ky tu so');
+    //     }
+    // }
+
+    //bai5
+    // let so1 = +prompt('nhap so thu nhat: ');
+    // let so2 = +prompt('nhap so thu hai: ');
+    // let so3 = +prompt('nhap so thu ba: ');
+    // min(so1,so2,so3);
+    // function min(a,b,c){
+    //     if (a < b && a < c){
+    //         alert('min = '+a);
+    //     }
+    //     if (a > b && a < c){
+    //         alert('min = '+b);
+    //     }
+    //     if (a < b && a > c){
+    //         alert('min = '+c);
+    //     }
+    //     if (a > b && a > c){
+    //         if (b > c){
+    //             alert('min = '+c);
+    //         }
+    //         if (b < c){
+    //             alert('min = '+b);
+    //         }
+    //     }
+    // }
+
+    //bai 6
+    // let so = +prompt('nhap so nguyen: ');
+    // kiemtra(so);
+    // function kiemtra(a){
+    //     if (a > 0){
+    //         alert(a + ' la so nguyen duong');
+    //     }else {
+    //         alert(a + ' la so nguyen am');
+    //     }
+    // }
+
+    //bai7
+    // let so1 = +prompt('nhap so thu nhat: ');
+    // let so2 = +prompt('nhap so thu hai: ');
+    // doicho(so1,so2)
+    // function doicho(a,b){
+    //     let temp = a
+    //     a = b
+    //     b = temp
+    //     document.write(a +','+b);
+    // }
+
+    //bai 8
+    // let str = prompt('nhap mang bat ky: ');
+    // sapxep(str)
+    // function sapxep(){
+    //     let arr = str.split(' ');
+    //     for (let i = 0;i < arr.length - 1; i++){
+    //         for (let j = i + 1; j <arr.length; j++){
+    //             if(arr[i]>arr[j]){
+    //                 let x = arr[i]
+    //                 arr[i] = arr[j]
+    //                 arr[j] = x
+    //             }
+    //         }
+    //     }
+    //     alert(arr)
+    // }
+
+    //bai 9
+    let arr = ['a','b','c','d','e','f','g','h',1,2,3,4,5,6];
+    let x = prompt('nhap ky tu bat ky: ');
+    alert(demkytu(arr,x))
+    function demkytu(arr,x){
+        let dem = 0;
+        for (let i = 0; i<arr.length; i++){
+            if (x === arr[i]) {
+                dem++
+            }
+        }
+        if (dem === 0){
+            return -1
+        }else {
+            return dem;
+        }
+    }
+</script>
+</body>
+</html>
